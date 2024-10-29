@@ -1,5 +1,15 @@
-#include <bits/stdc++.h>
+// Smallest number of n length whose digits are only 3 and  6  and divisible by
+// 33 and 66.
 
+// for number to be divisible the last 2 digits must be 66
+//
+//  330 % 66 = 0 ,  hence anything which can be broken down into 3300 + 66
+//  format must be divisible
+// This is for when n is even
+//
+// for n odd we can observe 363 is divisible
+
+#include <bits/stdc++.h>
 using namespace std;
 
 typedef long long ll;

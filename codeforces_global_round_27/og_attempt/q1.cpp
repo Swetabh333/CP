@@ -24,13 +24,26 @@ typedef set<char> sc;
 
 const int MOD = 1000000007;
 
-void solve() {}
+void solve(int rows, int cols, int row, int col) {
+  ll sum = 0;
+  ll row_dist = rows - row;
+  ll col_dist = cols - col;
+  sum += row_dist * (cols);
+  sum += (cols - 1) * row_dist;
+  sum += col_dist;
+  cout << sum << endl;
+}
 
 int main() {
   ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
   int t;
   cin >> t;
   while (t--) {
-    solve();
+    int n, m, r, c;
+    cin >> n;
+    cin >> m;
+    cin >> r;
+    cin >> c;
+    solve(n, m, r, c);
   }
 }

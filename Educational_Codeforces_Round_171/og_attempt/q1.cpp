@@ -24,7 +24,15 @@ typedef set<char> sc;
 
 const int MOD = 1000000007;
 
-void solve() {}
+void solve() {
+  int x, y, k;
+  cin >> x >> y >> k;
+  if (k <= x && k <= y) {
+    cout << 0 << " " << 0 << " " << k << " " << 0 << nl;
+    cout << 0 << " " << 0 << " " << 0 << " " << k << nl;
+    return;
+  }
+}
 
 int main() {
   ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
